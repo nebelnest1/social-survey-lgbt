@@ -250,6 +250,34 @@
     }
   };
 </script>
+  <script>
+  window.SURVEY_JS = [
+    {
+      "title": "attention",
+      "question": "intro_hard",
+      "answers": [
+        { "text": "no_18", "exit": "ageExit" },
+        { "text": "yes_18", "exit": "nextStep" }
+      ]
+    },
+    {
+      "title": "question",
+      "question": "pref_q",
+      "answers": [
+        { "text": "pref_1", "exit": "nextStep" },
+        { "text": "pref_2", "exit": "nextStep" }
+      ]
+    },
+    {
+      "title": "congratulations",
+      "question": "final_q",
+      "answers": [
+        { "text": "btn_watch", "exit": "mainExit" }
+      ]
+    }
+  ];
+</script>
+
 
 
   <script>"use strict";(()=>{const c=typeof window<"u"&&(window.isSecureContext||window.location.protocol==="https:"||window.location.hostname==="localhost");function a(e){return new Promise((t,n)=>{try{if(!c)return n("this feature is available only in secure contexts (HTTPS)");if(!(crypto!=null&&crypto.subtle.digest))return n("crypto.subtle.digest is not available");const r=new TextEncoder;crypto.subtle.digest("SHA-256",r.encode(e)).then(o=>{const s=Array.from(new Uint8Array(o)).map(i=>i.toString(16).padStart(2,"0")).join("");t(s)}).catch(n)}catch(r){n(r)}})}function d(){const e=[];return performance.getEntriesByType("resource").forEach(t=>{const n=t,r=n.initiatorType==="link"&&n.name.includes(".css"),o=n.initiatorType==="script"&&n.name.includes(".js");(r||o)&&typeof n.decodedBodySize=="number"&&e.push(n.decodedBodySize)}),e.sort(),e.join("-")}function l(e){let t=e;return t=t.replace(/<base.*?>/gm,""),t=t.replace(/var\s+APP_CONFIG\s*=\s*\{[^}]*\};*/gm,""),t=t.replace(/[\r\n]/gm,""),t.trim()}const h=l(document.documentElement.innerHTML);window.templateHash=null;try{document.addEventListener("DOMContentLoaded",()=>{a(JSON.stringify([h,d()])).then(e=>{var t;window.templateHash=e,(t=window.syncMetric)==null||t.call(window,{event:"template_hash_ready"})}).catch(e=>{console.error(`Error getting the template hash in promise: ${e.toString()}`)})})}catch(e){e&&typeof e=="object"&&console.error(`Error getting the template hash: ${e.toString()}`)}})();</script>
